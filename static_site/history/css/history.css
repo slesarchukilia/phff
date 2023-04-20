@@ -171,7 +171,9 @@ header {
 
 main {
     max-width: 65.5rem;
-    margin: 1.8rem auto 0 ;
+    margin: 1.8rem auto 0;
+    padding-bottom: 3rem;
+    animation: 0.8s fadeIn ease-in-out;
 }
 
 .section_1 {
@@ -259,9 +261,10 @@ h1 {
 /********** FOOTER *********/
 
 footer {
+    width: 100%;
     background-color: #54C2D4;
     margin-top: 1.875rem;
-    position: sticky;
+    position: fixed;
     bottom: 0;
     z-index: 2;
 }
@@ -416,6 +419,7 @@ footer {
 
     main {
         margin: 2rem 2rem 0 2rem;
+        padding-bottom: 0;
     }
 
     h1 {
@@ -489,3 +493,12 @@ footer {
     75% { transform: rotate(-5deg); }
     100% { transform: rotate(0deg); }
   }
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}   

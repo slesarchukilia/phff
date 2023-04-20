@@ -200,6 +200,7 @@ h1 {
     margin: 1.8rem auto 0;
     font-size: 36px;
     line-height: 43px;
+    animation: 0.8s fadeIn ease-in-out;
 } 
 
 p {
@@ -212,6 +213,7 @@ p {
     font-style: normal;
     font-weight: 500;
     line-height: 1.5rem;
+    animation: 0.8s fadeIn ease-in-out;
 }
 
 main {
@@ -222,6 +224,8 @@ main {
     flex-wrap: wrap;
     gap: 2rem;
     border: 2px solid #54C2D4;
+    margin-bottom: 4rem;
+    animation: 0.8s fadeIn ease-in-out;
 }
 
 /* main::before {
@@ -252,9 +256,11 @@ img {
 /********** FOOTER *********/
 
 footer {
+    width: 100%;
     background-color: #54C2D4;
     margin-top: 1.875rem;
-    position: sticky;
+    position: fixed;
+    left: 0;
     bottom: 0;
     z-index: 2;
 }
@@ -303,7 +309,8 @@ footer {
 
     main {
         margin: 0 2rem;
-        gap: 1rem; 
+        gap: 1rem;
+        margin-bottom: 4rem;
     }
 
     section {
@@ -381,7 +388,8 @@ footer {
 
     main {
         margin: 0 1rem;
-        gap: 1rem; 
+        gap: 1rem;
+        margin-bottom: 1rem;
     }
 
     section {
@@ -411,3 +419,12 @@ footer {
     75% { transform: rotate(-5deg); }
     100% { transform: rotate(0deg); }
   }
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}   

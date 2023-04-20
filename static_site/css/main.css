@@ -169,6 +169,7 @@ header {
     max-width: 85rem;
     height: 200px;
     margin: 0 auto;
+    animation: 0.8s fadeIn ease-in-out;
 }
 
 .slider > img {
@@ -182,12 +183,15 @@ header {
 .heading {
     max-width: 48.5rem;
     margin: 3rem auto 2rem;
+    animation: 0.8s fadeIn ease-in-out;
 }
 
 main {
     max-width: 85rem;
     margin: 0 auto;
     padding: 0 6.8rem;
+    padding-bottom: 3rem;
+    animation: 0.8s fadeIn ease-in-out;
 }
 
 .main_wrap {
@@ -290,10 +294,13 @@ main {
 /********** FOOTER *********/
 
 footer {
+    width: 100%;
     background-color: #54C2D4;
     margin-top: 1.875rem;
-    position: sticky;
+    position: fixed;
     bottom: 0;
+    left: 0;
+
     z-index: 2;
 }
 
@@ -357,6 +364,7 @@ footer::before {
 
     main {
         padding: 0 3rem;
+        padding-bottom: 3rem;
     }
 
     .card {
