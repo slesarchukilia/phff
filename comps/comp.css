@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+html,
+body * {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "a-day-without-sun-text", sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    background-color: #d6c5b174;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    width: 80%;
+    margin: 1rem auto 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.main_page {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.history_page {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;;
+}
+
+.img_wrap {
+    width: 80%;
+}

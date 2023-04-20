@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+/*   **********    SETUP OF DOCUMENT     **********     */
+
+html,
+body * {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    max-width: 112.5rem;
+    margin: 0;
+    padding: 0;
+    font-family: "a-day-without-sun-text", sans-serif;
+    background-color: #b4b4b4;
+}
+
+.container {
+    max-width: 85rem;
+    margin: 0 auto;
+    padding: 0 3.125rem;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*   **********    MAIN ELEMENTS     **********     */
+
+/* main {
+    width: 85rem;
+    min-height: 50.0rem;
+    margin: 0 auto;
+    background-color: #DDD;
+    color: #BBB;
+} */
+
+
+/* Up Header */
+
+.up_header {
+    width: 100%;
+    background-color: #fff;
+}
+
+.up_header_wrap {
+    max-width: 85rem;
+    margin: 0 auto;
+    padding: 0.3rem 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.social > img {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+
+
+/********* Header **********/
+
+header {
+    /* width: 100%; */
+    background-color: #363838;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.header_content {
+    max-width: 85rem;
+    margin: 0 auto;
+    padding: 0 3.125rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.625rem;
+}
+
+.header_left {
+    width: 50%;
+    padding: 0.5rem 0;
+}
+
+.logo {
+    width: 13rem;
+    height: 3rem;
+    background-color: black;
+}
+
+.header_right {
+    width: 50%;
+}
+
+.nav-main {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-main_list {
+    display: flex;
+    gap: 1.875rem;
+}
+
+.nav-main_item {
+    position: relative;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    visibility: hidden;
+    z-index: 3;
+    gap: 1rem;
+    top: 4.15rem;
+    left: 0;
+    padding: 0.5rem;
+    font-size: 1.625rem;
+    transition: 0.1s ease-in-out;
+    background-color: #fff;
+}
+
+.nav-main_item:hover  {
+    background-color: #fff;
+}
+
+.nav-main_item:hover > a {
+    opacity: 0.6;
+}
+
+
+.nav-main_item:hover .dropdown {
+    visibility: visible;
+}
+
+.dropdown > li:hover {
+    opacity: 0.6;
+}
+
+
+/********* Slider **********/
+
+.slider {
+    width: 85rem;
+    height: 200px;
+    margin: 0 auto;
+    background-color: rgb(97, 96, 96);
+}
+
+.slider > img {
+    margin: 0 auto;
+}
+
+
+/* Content */
+
+h1 {
+    /* width: 40rem; */
+    font-size: 5rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+
+main {
+    max-width: 85rem;
+    margin: 0 auto;
+    padding: 0 3.125rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.text {
+    width: 50%;
+    height: 15rem;
+    background-color: #fff;
+}
+
+.picture {
+    width: 40%;
+    height: 20rem;
+    background-color: rgb(55, 56, 57);
+    color: #fff;
+}
+
+
+/********** FOOTER *********/
+
+footer {
+    background-color: #363838;
+    margin-top: 1.875rem;
+}
+
+.footer_content {
+    width: 85rem;
+    padding: 0 3.125rem;
+    margin: 0 auto;
+    font-size: 1.3rem;
+}
+
+.contact {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+}
+
+.copyright {
+    color: #fff;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*   **********    CLEAR CODE FOR FLOATS     **********     */
+
+.clear__float {
+    float: none;
+    clear: both;
+}
+
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
